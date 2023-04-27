@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "fastapi-tutorial"
+version = "0.1.0"
+description = ""
+authors = ["Sergey McArov <naurion@yandex.ru>"]
+readme = "README.md"
+packages = [{include = "fastapi_tutorial"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["all"], version = "^0.95.1"}
+alembic = "^1.10.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
